@@ -2,120 +2,114 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>Interventi - ReplicanteGE</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ReplicanteGE - Registro Interventi</title>
     <style>
         body {
             background-color: #050505;
-            color: white;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
-            font-family: 'Courier New', monospace;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 40px 20px;
-        }
-
-        .header-mini {
-            color: #00f2ff;
-            text-decoration: none;
-            font-size: 14px;
-            letter-spacing: 5px;
-            margin-bottom: 50px;
-            border: 1px solid #00f2ff;
-            padding: 10px;
-        }
-
-        h1 {
-            color: #ff3c00;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            border-bottom: 2px solid #ff3c00;
-            padding-bottom: 10px;
-        }
-
-        .interventi-grid {
-            width: 100%;
-            max-width: 800px;
-            margin-top: 30px;
-        }
-
-        .intervento {
-            background: rgba(255, 255, 255, 0.03);
-            border: 1px solid #333;
-            margin-bottom: 20px;
             padding: 20px;
-            position: relative;
-            transition: 0.3s;
+            line-height: 1.6;
         }
-
-        .intervento:hover {
-            border-color: #ff3c00;
-            background: rgba(255, 60, 0, 0.05);
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            border-left: 3px solid #ff4d4d;
+            padding-left: 30px;
         }
-
-        .tag {
+        h1 {
             color: #00f2ff;
-            font-size: 12px;
+            text-shadow: 0 0 15px #00f2ff;
+            font-size: 2.5rem;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+        .subtitle {
+            color: #ff4d4d;
+            font-weight: bold;
+            letter-spacing: 2px;
+            margin-bottom: 40px;
+        }
+        .main-img {
+            width: 100%;
+            max-width: 700px;
+            height: auto;
+            border: 1px solid #00f2ff;
+            box-shadow: 0 0 20px rgba(0, 242, 255, 0.3);
+            margin: 20px 0;
+            display: block;
+        }
+        .date {
+            color: #888;
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+        h2 {
+            color: #00f2ff;
+            border-bottom: 1px solid #333;
+            padding-bottom: 10px;
+            margin-top: 40px;
+        }
+        p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            text-align: justify;
+        }
+        .highlight {
+            color: #fff;
             font-weight: bold;
         }
-
-        .data {
-            color: #666;
-            font-size: 12px;
-            float: right;
-        }
-
-        .btn-back {
+        .back-btn {
+            display: inline-block;
             margin-top: 50px;
+            padding: 10px 20px;
+            border: 1px solid #00f2ff;
             color: #00f2ff;
             text-decoration: none;
-            text-transform: uppercase;
-            font-size: 14px;
+            transition: 0.3s;
+        }
+        .back-btn:hover {
+            background: #00f2ff;
+            color: #000;
+            box-shadow: 0 0 15px #00f2ff;
+        }
+        footer {
+            margin-top: 60px;
+            font-size: 0.8rem;
+            color: #444;
+            text-align: center;
         }
     </style>
 </head>
 <body>
 
-    <a href="index.html" class="header-mini">REPLICANTEGE</a>
+<div class="container">
+    <h1>IL PANE DEI VILI E IL SANGUE DEGLI ALTRI</h1>
+    <div class="subtitle">REGISTRO INTERVENTI #01</div>
+    
+    <img src="vili.jpg" alt="Il pane dei vili" class="main-img">
 
-    <h1>REGISTRO INTERVENTI</h1>
+    <div class="date">Gennaio 2026 | Genova, Italia</div>
 
-    <div class="interventi-grid"><div class="intervento" style="border-left-color: #00f2ff; background: rgba(0, 242, 255, 0.05);">
-            <span class="tag">#LE_ORIGINI</span>
-            <span class="data">GENESI</span>
-            <h3>Il Replicante: Come tutto è iniziato</h3>
-            <p>
-                Nato tra i tubi e cresciuto tra le verità scomode. Dopo anni a osservare ostruzioni di ogni tipo, 
-                ho capito che quelle più dure da rimuovere non sono fatte di calcare, ma di ipocrisia. 
-                A 62 anni non cerco la pensione mentale, ma il "Faccia a Faccia" definitivo. 
-                Ho preso la chiave inglese e ho deciso di risalire lo scarico, da Genova fino a Roma... o Marte.
-            </p>
-        </div>
-        
-        <div class="intervento">
-            <span class="tag">#SPURGO_POLITICO</span>
-            <span class="data">GENNAIO 2026</span>
-            <h3>Salotto Romano: Pulizia tubature</h3>
-            <p>Intervento d'urgenza su chiacchiere da corridoio. Rimozione ostruzioni ideologiche senza filtri.</p>
-        </div>
+    <p>Il mondo sta cambiando pelle con la velocità di un proiettile, ma l’Italia sembra rimasta ferma a un vecchio film in bianco e nero, proiettato in una sezione di partito polverosa.</p>
 
-        <div class="intervento">
-            <span class="tag">#FACCIA_A_FACCIA</span>
-            <span class="data">DICEMBRE 2025</span>
-            <h3>Obiettivo Marte</h3>
-            <p>Analisi della fuga dalla realtà. Perché guardiamo alle stelle quando abbiamo i piedi nel fango?</p>
-        </div>
+    <p>Mentre a Caracas il regime di <span class="highlight">Nicolás Maduro</span> si sgretola sotto il "pugno d’acciaio" americano e i venezuelani piangono di gioia, a Genova assistiamo al teatro dell'assurdo. In via Galata e sotto la Prefettura, esponenti del <span class="highlight">PD, della CGIL e di Alleanza Verdi e Sinistra</span> scendono in piazza.</p>
 
-        <div class="intervento">
-            <span class="tag">#NIENTE_FILTRI</span>
-            <span class="data">IN CORSO</span>
-            <h3>Manutenzione Sociale</h3>
-            <p>Riparazione perdite di coerenza nei discorsi pubblici. Lavoro sporco, ma qualcuno deve farlo.</p>
-        </div>
+    <h2>I NOMI E I COGNOMI DELLA VILTÀ</h2>
+    <p>Non si possono risparmiare i protagonisti di questo declino. C'è la <span class="highlight">Schlein</span>, che invoca i trattati mentre i manifestanti iraniani vengono gettati nelle fosse comuni. C'è il "replicante" <span class="highlight">Conte</span>, pronto a vestire i panni del pacifista di facciata per compiacere chi, in fondo, odia l'Occidente più di quanto ami la libertà.</p>
 
-    </div>
+    <p>Noi italiani siamo diventati questo: un popolo di spettatori che <span class="highlight">"mangia il pane sulle schiene degli altri"</span>. Aspettiamo che gli americani facciano il lavoro sporco per poi criticare il "metodo" dall'alto di una presunta superiorità morale.</p>
 
-    <a href="index.html" class="btn-back">← Torna alla base</a>
+    <p>Ma c'è chi, a 62 anni, non ci sta. Chi ha una faccia sola e prova un profondo schifo nel vedere il proprio Paese ridotto a un vassallo irrilevante. <span class="highlight">Chi non sa da che parte stare quando un dittatore cade, ha già scelto di stare dalla parte sbagliata della storia.</span></p>
+
+    <a href="index.html" class="back-btn">← TORNA ALLA BASE</a>
+</div>
+
+<footer>
+    POWERED BY GEMINI AI & REPLICANTEGE © 2026
+</footer>
 
 </body>
 </html>
