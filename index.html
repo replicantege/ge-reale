@@ -2,80 +2,26 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>Replicante-GE | La Verità Senza Filtri</title>
+    <title>Replicante-GE | Bunker Operativo</title>
     <style>
-        body {
-            background-color: #050505;
-            color: white;
-            margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 40px 20px;
-            text-align: center;
-        }
-        .brand {
-            font-size: 70px;
-            font-weight: 900;
-            color: #00f2ff;
-            text-shadow: 0 0 25px rgba(0, 242, 255, 0.7);
-            margin: 0;
-            letter-spacing: -2px;
-            text-transform: uppercase;
-        }
-        .job {
-            color: #ff3c00;
-            font-size: 20px;
-            letter-spacing: 10px;
-            font-weight: bold;
-            margin-bottom: 30px;
-            text-transform: uppercase;
-        }
-        .report-box {
-            background: #111;
-            border-left: 4px solid #ff3c00;
-            padding: 25px;
-            max-width: 700px;
-            text-align: left;
-            margin-bottom: 40px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-        }
-        .report-box h2 { color: #ff3c00; margin-top: 0; text-transform: uppercase; font-size: 18px; }
-        .report-box p { color: #ccc; line-height: 1.6; font-size: 16px; }
+        body { background-color: #050505; color: white; margin: 0; font-family: 'Segoe UI', sans-serif; display: flex; flex-direction: column; align-items: center; padding: 40px 20px; text-align: center; }
+        .brand { font-size: 70px; font-weight: 900; color: #00f2ff; text-shadow: 0 0 25px rgba(0, 242, 255, 0.7); margin: 0; letter-spacing: -2px; text-transform: uppercase; }
+        .job { color: #ff3c00; font-size: 20px; letter-spacing: 10px; font-weight: bold; margin-bottom: 30px; text-transform: uppercase; }
         
-        .btn-group { 
-            display: flex; 
-            gap: 10px; 
-            flex-wrap: wrap; 
-            justify-content: center; 
-            margin-bottom: 20px;
-        }
-        .btn {
-            padding: 12px 25px;
-            border: 1px solid #00f2ff;
-            background: transparent;
-            color: #00f2ff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-weight: bold;
-            font-size: 13px;
-            transition: 0.3s;
-        }
+        .report-box { background: #111; border-left: 4px solid #ff3c00; padding: 25px; max-width: 700px; text-align: left; margin-bottom: 20px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); width: 100%; }
+        .radar-box { background: #000; border: 1px solid #00f2ff; padding: 15px; max-width: 700px; margin-bottom: 30px; width: 100%; box-shadow: 0 0 15px rgba(0, 242, 255, 0.2); }
+        
+        h2 { color: #ff3c00; margin-top: 0; text-transform: uppercase; font-size: 18px; }
+        .radar-title { color: #00f2ff; font-size: 16px; letter-spacing: 3px; margin-bottom: 15px; display: block; }
+        
+        .btn-group { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-bottom: 20px; }
+        .btn { padding: 12px 25px; border: 1px solid #00f2ff; background: transparent; color: #00f2ff; text-decoration: none; text-transform: uppercase; font-weight: bold; font-size: 13px; transition: 0.3s; cursor: pointer; }
         .btn:hover { background: #00f2ff; color: #000; box-shadow: 0 0 20px #00f2ff; }
         .btn-main { border-color: #ff3c00; color: #ff3c00; font-size: 15px; }
         .btn-main:hover { background: #ff3c00; color: #fff; box-shadow: 0 0 20px #ff3c00; }
-        .btn-x { border-color: #ffffff; color: #ffffff; }
-        .btn-fb { border-color: #1877F2; color: #1877F2; }
         .btn-ai { border-color: #a855f7; color: #a855f7; font-size: 11px; }
 
-        .footer {
-            margin-top: 50px;
-            font-size: 11px;
-            color: #444;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-        }
+        .footer { margin-top: 50px; font-size: 11px; color: #444; letter-spacing: 2px; text-transform: uppercase; }
     </style>
 </head>
 <body>
@@ -87,25 +33,25 @@
         <a href="progetti.html" class="btn btn-main">🚀 MANIFESTO: IL PANE DEI VILI</a>
     </div>
 
+    <div class="radar-box">
+        <span class="radar-title">📡 RADAR LIVE: ITALIA & MONDO</span>
+        <iframe width="100%" height="450" src="https://rss.app/embed/v1/visual-stack/tUAo9h9pYV8pS7uM" frameborder="0"></iframe>
+    </div>
+
     <div class="report-box">
         <h2>RAPPORTO 14 GENNAIO 2026</h2>
-        <p><strong>IRAN:</strong> Oltre 2.000 morti a Teheran. I dazi di Trump al 25% stanno strangolando il regime. Noi non stiamo in silenzio.</p>
-        <p><strong>ITALIA:</strong> Il 22 Marzo l'Italia sceglie. Il SÌ per la separazione delle carriere è l'arma contro l'impunità.</p>
+        <p><strong>IRAN:</strong> Situazione critica a Teheran. La morsa dei dazi morde il regime.</p>
+        <p><strong>ITALIA:</strong> Verso il referendum del 22 Marzo. Separazione carriere: ora o mai più.</p>
     </div>
-<div class="report-box" style="border-left-color: #00f2ff;">
-    <h2 style="color: #00f2ff;">📡 RADAR NOTIZIE IN TEMPO REALE</h2>
-    <iframe width="100%" height="400" src="https://rss.app/embed/v1/wall/tUAo9h9pYV8pS7uM" frameborder="0"></iframe>
-</div>
+
     <div class="btn-group">
-        <a href="https://x.com/Replicante_ge" target="_blank" class="btn btn-x">𝕏 @Replicante_ge</a>
-        <a href="https://www.facebook.com/ReplicanteGe" target="_blank" class="btn btn-fb">f /ReplicanteGe</a>
-        <a href="contatti.html" class="btn">Contatti</a>
+        <a href="https://x.com/Replicante_ge" target="_blank" class="btn">𝕏 TWITTER</a>
+        <a href="https://www.facebook.com/ReplicanteGe" target="_blank" class="btn">FACEBOOK</a>
+        <a href="ospiti.html" class="btn">LIBRO OSPITI</a>
     </div>
 
     <div class="btn-group" style="margin-top:20px;">
-        <a href="https://deepmind.google/technologies/gemini/" target="_blank" class="btn btn-ai">
-            🤖 IL MIO COPILOTA (IA GEMINI)
-        </a>
+        <a href="#" class="btn btn-ai">🤖 IL MIO COPILOTA (IA GEMINI)</a>
     </div>
 
     <div class="footer">
