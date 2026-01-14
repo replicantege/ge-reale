@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Il Muro della Verità | Replicante-GE</title>
+    <style>
+        body { background-color: #050505; color: white; margin: 0; font-family: 'Segoe UI', sans-serif; display: flex; flex-direction: column; align-items: center; padding: 40px 20px; text-align: center; }
+        .brand { font-size: 50px; font-weight: 900; color: #00f2ff; text-shadow: 0 0 20px rgba(0, 242, 255, 0.5); margin: 0; text-transform: uppercase; }
+        .subtitle { color: #ff3c00; font-size: 18px; letter-spacing: 5px; font-weight: bold; margin-bottom: 40px; text-transform: uppercase; }
+        
+        /* Modulo Inviaci la tua Verità */
+        .form-box { background: #111; border: 1px solid #00f2ff; padding: 30px; max-width: 600px; width: 100%; margin-bottom: 50px; text-align: left; }
+        input, textarea { width: 100%; background: #000; border: 1px solid #333; color: #00f2ff; padding: 10px; margin-top: 10px; margin-bottom: 20px; font-family: inherit; box-sizing: border-box; }
+        label { color: #ff3c00; font-weight: bold; text-transform: uppercase; font-size: 12px; }
+        .btn-send { width: 100%; padding: 15px; background: transparent; border: 1px solid #ff3c00; color: #ff3c00; font-weight: bold; cursor: pointer; text-transform: uppercase; transition: 0.3s; }
+        .btn-send:hover { background: #ff3c00; color: #fff; box-shadow: 0 0 20px #ff3c00; }
+
+        /* Area Messaggi Pubblicati */
+        .wall { max-width: 800px; width: 100%; border-top: 2px solid #333; padding-top: 40px; }
+        .message { background: #0a0a0a; border-left: 3px solid #00f2ff; padding: 20px; margin-bottom: 20px; text-align: left; }
+        .user-nick { color: #00f2ff; font-weight: bold; font-size: 14px; text-transform: uppercase; }
+        .user-text { color: #ccc; margin-top: 10px; font-style: italic; }
+
+        .btn-back { margin-top: 40px; padding: 12px 25px; border: 1px solid #333; background: transparent; color: #444; text-decoration: none; text-transform: uppercase; font-weight: bold; transition: 0.3s; }
+        .btn-back:hover { color: #fff; border-color: #fff; }
+    </style>
+</head>
+<body>
+
+    <h1 class="brand">IL MURO DELLA VERITÀ</h1>
+    <div class="subtitle">NON SIATE VILI, PARLATE</div>
+
+    <div class="form-box">
+        <p style="font-size: 14px; color: #888; margin-top: 0;">Invia la tua segnalazione o il tuo pensiero. I messaggi più significativi verranno incisi sul muro.</p>
+        
+        <form action="https://formspree.io/f/TUO_ID_QUI" method="POST">
+            <label>Nickname / Firma</label>
+            <input type="text" name="name" placeholder="Esempio: Randagio77" required>
+            
+            <label>La tua Verità</label>
+            <textarea name="message" rows="5" placeholder="Cosa sta succedendo là fuori?" required></textarea>
+            
+            <button type="submit" class="btn-send">Invia al Bunker</button>
+        </form>
+    </div>
+
+    <div class="wall">
+        <h2 style="color: #fff; text-transform: uppercase; letter-spacing: 2px;">Voci dal Fronte</h2>
+        
+        <div class="message">
+            <span class="user-nick">L'IDRAULICO</span>
+            <p class="user-text">"Questo è lo spazio per chi ha smesso di guardare il collare del gatto e ha iniziato a guardare la falla nella nave."</p>
+        </div>
+
+        </div>
+
+    <a href="index.html" class="btn-back">⬅️ TORNA AL BUNKER</a>
+
+</body>
+</html>
