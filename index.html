@@ -2,7 +2,7 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>ReplicanteGE - L'Idraulico</title>
+    <title>Replicante-GE | La Verità Senza Filtri</title>
     <style>
         body {
             background-color: #050505;
@@ -12,12 +12,11 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-content: center;
-            height: 100vh;
+            padding: 40px 20px;
             text-align: center;
         }
         .brand {
-            font-size: 85px;
+            font-size: 70px;
             font-weight: 900;
             color: #00f2ff;
             text-shadow: 0 0 25px rgba(0, 242, 255, 0.7);
@@ -27,22 +26,24 @@
         }
         .job {
             color: #ff3c00;
-            font-size: 22px;
-            letter-spacing: 12px;
+            font-size: 20px;
+            letter-spacing: 10px;
             font-weight: bold;
-            margin-bottom: 40px;
+            margin-bottom: 30px;
             text-transform: uppercase;
         }
-        .manifesto {
-            font-size: 20px;
-            max-width: 600px;
-            line-height: 1.6;
-            color: #bbb;
-            margin-bottom: 50px;
-            border-left: 3px solid #ff3c00;
-            padding-left: 20px;
+        .report-box {
+            background: #111;
+            border-left: 4px solid #ff3c00;
+            padding: 25px;
+            max-width: 700px;
             text-align: left;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
         }
+        .report-box h2 { color: #ff3c00; margin-top: 0; text-transform: uppercase; font-size: 18px; }
+        .report-box p { color: #ccc; line-height: 1.6; font-size: 16px; }
+        
         .btn-group { 
             display: flex; 
             gap: 10px; 
@@ -62,23 +63,14 @@
             transition: 0.3s;
         }
         .btn:hover { background: #00f2ff; color: #000; box-shadow: 0 0 20px #00f2ff; }
+        .btn-main { border-color: #ff3c00; color: #ff3c00; font-size: 15px; }
+        .btn-main:hover { background: #ff3c00; color: #fff; box-shadow: 0 0 20px #ff3c00; }
         .btn-x { border-color: #ffffff; color: #ffffff; }
-        .btn-x:hover { background: #ffffff; color: #000; }
         .btn-fb { border-color: #1877F2; color: #1877F2; }
-        .btn-fb:hover { background: #1877F2; color: #fff; }
-
-        /* Bottone IA Speciale Viola */
-        .btn-ai {
-            border-color: #a855f7;
-            color: #a855f7;
-            font-size: 11px;
-            padding: 8px 20px;
-        }
-        .btn-ai:hover { background: #a855f7; color: #fff; box-shadow: 0 0 20px #a855f7; }
+        .btn-ai { border-color: #a855f7; color: #a855f7; font-size: 11px; }
 
         .footer {
-            position: absolute;
-            bottom: 20px;
+            margin-top: 50px;
             font-size: 11px;
             color: #444;
             letter-spacing: 2px;
@@ -88,25 +80,28 @@
 </head>
 <body>
 
-    <h1 class="brand">REPLICANTEGE</h1>
-    <div class="job">L'IDRAULICO</div>
+    <h1 class="brand">REPLICANTE-GE</h1>
+    <div class="job">L'IDRAULICO DELLA VERITÀ</div>
 
-    <div class="manifesto">
-        Sturo politicanti da salotto.<br>
-        #FacciaAFaccia | Roma o Marte?<br>
-        Niente filtri.
+    <div class="btn-group">
+        <a href="progetti.html" class="btn btn-main">🚀 MANIFESTO: IL PANE DEI VILI</a>
+    </div>
+
+    <div class="report-box">
+        <h2>RAPPORTO 14 GENNAIO 2026</h2>
+        <p><strong>IRAN:</strong> Oltre 2.000 morti a Teheran. I dazi di Trump al 25% stanno strangolando il regime. Noi non stiamo in silenzio.</p>
+        <p><strong>ITALIA:</strong> Il 22 Marzo l'Italia sceglie. Il SÌ per la separazione delle carriere è l'arma contro l'impunità.</p>
     </div>
 
     <div class="btn-group">
-        <a href="progetti.html" class="btn">Registro Interventi</a>
         <a href="https://x.com/Replicante_ge" target="_blank" class="btn btn-x">𝕏 @Replicante_ge</a>
         <a href="https://www.facebook.com/ReplicanteGe" target="_blank" class="btn btn-fb">f /ReplicanteGe</a>
-        <a href="contatti.html" class="btn">Contattami</a>
+        <a href="contatti.html" class="btn">Contatti</a>
     </div>
 
-    <div class="btn-group">
+    <div class="btn-group" style="margin-top:20px;">
         <a href="https://deepmind.google/technologies/gemini/" target="_blank" class="btn btn-ai">
-            🤖 CHI È GEMINI? (L'IA CHE MI AIUTA)
+            🤖 IL MIO COPILOTA (IA GEMINI)
         </a>
     </div>
 
@@ -114,28 +109,5 @@
         POWERED BY GEMINI AI & REPLICANTEGE © 2026
     </div>
 
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <title>Replicante-GE | La Verità Senza Filtri</title>
-    <style>
-        body { font-family: sans-serif; background-color: #1a1a1a; color: #e0e0e0; padding: 20px; }
-        .alert { border: 2px solid #ff4444; padding: 15px; margin-bottom: 20px; }
-        h1 { color: #ff4444; }
-    </style>
-</head>
-<body>
-    <h1>REPLICANTE-GE: RAPPORTO 14 GENNAIO 2026</h1>
-    <div class="alert">
-        <h2>IRAN: IL MASSACRO SILENZIATO</h2>
-        <p>Mentre l'IA di sistema censura, i fatti parlano: oltre 2.000 morti a Teheran. Trump ha rotto gli indugi: dazi del 25% su chiunque sostenga il regime. L'aiuto ai patrioti sta arrivando.</p>
-    </div>
-    <h2>ITALIA: IL BIVIO DEL 22 MARZO</h2>
-    <p>Le piazze sono silenziose, ma il 57% degli italiani ha già deciso. Al Referendum sulla Giustizia voteremo SÌ per separare le carriere e finire l'era dell'impunità.</p>
-    <hr>
-    <p><em>Pubblicato da Replicante-GE - Nessun filtro, solo realtà.</em></p>
 </body>
 </html>
