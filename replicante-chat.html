@@ -1,0 +1,61 @@
+<div id="ai-chat" style="position: fixed; bottom: 20px; right: 20px; width: 320px; background: #0a0a0a; border: 1px solid #00f2ff; border-radius: 5px; box-shadow: 0 0 20px rgba(0,242,255,0.2); font-family: 'Courier New', monospace; z-index: 9999;">
+    <div style="background: #00f2ff; color: #000; padding: 10px; font-weight: bold; text-transform: uppercase; font-size: 12px; display: flex; justify-content: space-between;">
+        <span>SISTEMA_MOD: ATTIVO</span>
+        <span style="cursor:pointer" onclick="document.getElementById('ai-chat').style.display='none'">[X]</span>
+    </div>
+    
+    <div id="chat-box" style="height: 250px; overflow-y: auto; padding: 15px; font-size: 13px; color: #00f2ff; background: #050505;">
+        <p><span style="color: #ff3c00;">[SISTEMA]:</span> Collegamento criptato stabilito. Benvenuto nel Bunker. Sono l'interfaccia di moderazione. Parla, ti ascolto.</p>
+    </div>
+    
+    <div style="padding: 10px; border-top: 1px solid #333; display: flex; background: #111;">
+        <input type="text" id="user-msg" placeholder="Inserisci comando..." style="flex: 1; padding: 8px; border: 1px solid #333; background: #000; color: #00f2ff; border-radius: 2px; outline: none; font-size: 12px;">
+        <button onclick="handleChat()" style="margin-left: 5px; cursor: pointer; background: transparent; color: #00f2ff; border: 1px solid #00f2ff; padding: 5px 10px; font-size: 10px; text-transform: uppercase; font-weight: bold;">Invia</button>
+    </div>
+</div>
+
+<script>
+const responses = {
+    "ciao": "Identità non riconosciuta, ma il segnale è pulito. Benvenuto al fronte.",
+    "aiuto": "Naviga nel menu: Progetti per il Manifesto, Conte per i Dossier, Muro per parlare.",
+    "chi sei": "Sono il Protocollo di Sicurezza del Bunker. Proteggo queste mura dai vili.",
+    "pane": "Il Pane dei Vili non si mangia qui. Qui si mastica verità.",
+    "genova": "Genova è nostra. Dobbiamo solo svegliarla dal torpore.",
+    "conte": "Il dossier è pronto. Vai alla sezione dedicata per vedere il trasformismo in atto.",
+    "default": "Comando non riconosciuto. Il sistema sta analizzando la tua richiesta..."
+};
+
+const blacklist = ["scemo", "stupido", "idiota", "vile"];
+
+function handleChat() {
+    const input = document.getElementById('user-msg');
+    const box = document.getElementById('chat-box');
+    const msg = input.value.trim().toLowerCase();
+    
+    if(!msg) return;
+
+    // Aggiungi messaggio utente
+    box.innerHTML += `<p><span style="color: #666;">[UTENTE]:</span> ${input.value}</p>`;
+
+    // Logica di moderazione
+    let containsBadWord = blacklist.some(word => msg.includes(word));
+    
+    setTimeout(() => {
+        if (containsBadWord) {
+            box.innerHTML += `<p style="color: #ff3c00;"><strong>[MOD]:</strong> Linguaggio non conforme. Nel bunker serve disciplina, non insulti.</p>`;
+        } else {
+            let reply = responses["default"];
+            for (let key in responses) {
+                if (msg.includes(key)) {
+                    reply = responses[key];
+                    break;
+                }
+            }
+            box.innerHTML += `<p><span style="color: #ff3c00;">[SISTEMA]:</span> ${reply}</p>`;
+        }
+        box.scrollTop = box.scrollHeight;
+    }, 600);
+
+    input.value = "";
+}
+</script>
